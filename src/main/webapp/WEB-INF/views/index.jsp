@@ -3,7 +3,7 @@
 <%@ include file="layout/header.jsp"%>
 
 <div class="container">
-
+<%-- 
 <c:forEach var="board" items="${boards.content}">
 	<div class="card m-2">
 		<div class="card-body">
@@ -34,7 +34,8 @@
   
 </ul>
 	
-
+ --%>
+ 좀 되라!!!!!!!!!!!!
 </div>
 
 <%@ include file="layout/footer.jsp"%>
