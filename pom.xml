@@ -8,11 +8,11 @@
 		<version>2.2.6.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.cos</groupId>
-	<artifactId>blog</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
-	<name>blog</name>
-	<description>My First Blog Project</description>
+	<groupId>net.slipp</groupId>
+	<artifactId>my-slipp</artifactId>
+	<version>1.0</version>
+	<name>my-slipp</name>
+	<description>SLIPP QnA</description>
 
 	<properties>
 		<java.version>1.8</java.version>
