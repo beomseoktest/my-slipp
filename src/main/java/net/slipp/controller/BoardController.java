@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestMethod;
 
 import net.slipp.service.BoardService;
 
@@ -21,10 +22,10 @@ public class BoardController {
 	
 	// 컨트롤로에서 세션을 어떻게 찾는지?
 	// @AuthenticationPrincipal PrincipalDetail principal
-//	@GetMapping({"", "/"})
+	//@GetMapping({"", "/"})
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String index() {  
-//		model.addAttribute("boards", boardService.글목록(pageable));
+		//model.addAttribute("boards", boardService.글목록(pageable));
 		return "index"; // viewResolver 작동!!
 	}
 	
