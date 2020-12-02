@@ -12,6 +12,7 @@
 	<artifactId>my-slipp</artifactId>
 	<version>1.0</version>
 	<name>my-slipp</name>
+	<packaging>war</packaging>
 	<description>SLIPP QnA</description>
 
 	<properties>
@@ -29,10 +30,17 @@
 	 
 	
 	<!-- JSP 템플릿 엔진 -->
-	<dependency>
+	<!-- <dependency>
 	  <groupId>org.apache.tomcat</groupId>
 	  <artifactId>tomcat-jasper</artifactId>
 	  <version>9.0.22</version>
+	  <scope>provided</scope>
+	</dependency> -->
+	
+	<dependency>
+	    <groupId>org.apache.tomcat.embed</groupId>
+	    <artifactId>tomcat-embed-jasper</artifactId>
+	    <scope>provided</scope>
 	</dependency>
 	
 	<!-- JSTL -->
