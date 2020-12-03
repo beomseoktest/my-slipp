@@ -24,8 +24,8 @@ public class BoardController {
 	// @AuthenticationPrincipal PrincipalDetail principal
 	//@GetMapping({"", "/"})
 	@RequestMapping(value = "/", method = RequestMethod.GET)
-	public String index() {  
-		//model.addAttribute("boards", boardService.글목록(pageable));
+	public String index(Model model, @PageableDefault(size=3, sort="id", direction = Sort.Direction.DESC) Pageable pageable) {  
+		model.addAttribute("boards", boardService.글목록(pageable));
 		return "index"; // viewResolver 작동!!
 	}
 	
